@@ -1,0 +1,201 @@
+.login_container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+  
+.login_container form {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+  
+.login_container label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+  
+.login_container input {
+    width: 95%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.login_container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+  
+  
+.password_field {
+    position: relative;
+    width: 100%;
+}
+  
+.password_field input {
+    padding-right: 10px;
+}
+  
+.toggle_eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 16px;
+}
+  
+.toggle_eye:hover {
+    color: #111827;
+}
+  
+  
+.form_message {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+  
+.form_message.success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+  
+.form_message.error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+  
+  
+.login_container button {
+    margin-top: 10px;
+    padding: 11px 12px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.1s ease;
+}
+  
+.login_container button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+  
+.login_container button:active:not(:disabled) {
+    transform: scale(0.98);
+}
+  
+.login_container button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+  
+  
+@media (max-width: 768px) {
+    .login_container form {
+      max-width: 360px;
+      padding: 26px 22px;
+    }
+  
+    .login_container label {
+      font-size: 13.5px;
+    }
+  
+    .login_container input {
+      font-size: 13.5px;
+    }
+  
+    .login_container button {
+      font-size: 14.5px;
+    }
+}
+  
+  
+@media (max-width: 600px) {
+    .login_container {
+      padding: 15px;
+    }
+  
+    .login_container form {
+      max-width: 330px;
+      padding: 24px 20px;
+    }
+  
+    .login_container label {
+      font-size: 13px;
+    }
+  
+    .login_container input {
+      padding: 10px 11px;
+      font-size: 13px;
+    }
+  
+    .toggle_eye {
+      font-size: 15px;
+    }
+  
+    .login_container button {
+      padding: 10px 11px;
+      font-size: 14px;
+    }
+}
+  
+  
+@media (max-width: 480px) {
+    .login_container {
+      padding: 12px;
+    }
+  
+    .login_container form {
+      max-width: 300px;
+      padding: 22px 18px;
+    }
+  
+    .login_container label {
+      font-size: 12.5px;
+    }
+  
+    .login_container input {
+      padding: 9px 10px;
+      font-size: 12.5px;
+    }
+  
+    .toggle_eye {
+      right: 10px;
+      font-size: 14px;
+    }
+  
+    .form_message {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .login_container button {
+      padding: 9px 10px;
+      font-size: 13.5px;
+    }
+}
+  

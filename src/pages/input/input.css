@@ -1,0 +1,191 @@
+.phrase_page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+  
+.phrase_page h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.phrase_form {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+  
+.phrase_form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+  
+.phrase_form textarea {
+    width: 90%;
+    resize: none;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    line-height: 1.5;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.phrase_form textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+  
+.phrase_form button {
+    margin-top: 8px;
+    padding: 11px 12px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.1s ease;
+}
+  
+.phrase_form button:hover {
+    background: #1d4ed8;
+}
+  
+.phrase_form button:active {
+    transform: scale(0.98);
+}
+  
+  
+.error,
+.success {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+  
+.error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+  
+.success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+  
+  
+@media (max-width: 768px) {
+    .phrase_page h2 {
+      font-size: 22px;
+    }
+  
+    .phrase_form {
+      max-width: 380px;
+      padding: 26px 22px;
+    }
+  
+    .phrase_form label {
+      font-size: 13.5px;
+    }
+  
+    .phrase_form textarea {
+      font-size: 13.5px;
+    }
+  
+    .phrase_form button {
+      font-size: 14.5px;
+    }
+}
+  
+  
+@media (max-width: 600px) {
+    .phrase_page {
+      padding: 15px;
+    }
+  
+    .phrase_page h2 {
+      font-size: 20px;
+    }
+  
+    .phrase_form {
+      max-width: 340px;
+      padding: 24px 20px;
+    }
+  
+    .phrase_form label {
+      font-size: 13px;
+    }
+  
+    .phrase_form textarea {
+      padding: 11px 12px;
+      font-size: 13px;
+    }
+  
+    .phrase_form button {
+      padding: 10px 11px;
+      font-size: 14px;
+    }
+  
+    .error,
+    .success {
+      font-size: 12.5px;
+    }
+}
+  
+  
+@media (max-width: 480px) {
+    .phrase_page {
+      padding: 12px;
+    }
+  
+    .phrase_page h2 {
+      font-size: 18px;
+    }
+  
+    .phrase_form {
+      max-width: 310px;
+      padding: 22px 18px;
+    }
+  
+    .phrase_form label {
+      font-size: 12.5px;
+    }
+  
+    .phrase_form textarea {
+      padding: 10px 11px;
+      font-size: 12.5px;
+    }
+  
+    .phrase_form button {
+      padding: 9px 10px;
+      font-size: 13.5px;
+    }
+  
+    .error,
+    .success {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+}
+  

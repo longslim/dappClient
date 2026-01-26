@@ -1,0 +1,143 @@
+.home_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 25px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+  
+  
+.home_header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.home_header h4:first-child {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+  
+.home_header h4:last-child {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+  
+  
+.home_section {
+    max-width: 900px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+  
+.home_section h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #f1f5f9;
+}
+  
+.home_section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #e5e7eb;
+}
+  
+  
+.home_wallets {
+    margin-top: 35px;
+}
+  
+  
+.home_footer {
+    margin-top: 50px;
+}
+  
+  
+@media (max-width: 768px) {
+    .home_container {
+      padding: 30px 20px;
+    }
+  
+    .home_section h2 {
+      font-size: 22px;
+    }
+  
+    .home_section p {
+      font-size: 14px;
+    }
+  
+    .home_header h4:first-child {
+      font-size: 20px;
+    }
+  
+    .home_header h4:last-child {
+      font-size: 14px;
+    }
+}
+  
+  
+@media (max-width: 600px) {
+    .home_container {
+      padding: 25px 16px;
+    }
+  
+    .home_section {
+      margin-bottom: 28px;
+    }
+  
+    .home_section h2 {
+      font-size: 20px;
+    }
+  
+    .home_section p {
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+  
+    .home_header h4:first-child {
+      font-size: 18px;
+    }
+  
+    .home_header h4:last-child {
+      font-size: 13px;
+    }
+}
+  
+ 
+@media (max-width: 480px) {
+    .home_container {
+      padding: 20px 12px;
+    }
+  
+    .home_header {
+      margin-bottom: 28px;
+    }
+  
+    .home_section h2 {
+      font-size: 18px;
+    }
+  
+    .home_section p {
+      font-size: 13px;
+    }
+  
+    .home_header h4:first-child {
+      font-size: 16px;
+    }
+  
+    .home_header h4:last-child {
+      font-size: 12px;
+    }
+  
+    .home_section p br {
+      display: none; 
+    }
+  
+    .home_footer {
+      margin-top: 40px;
+    }
+}
+  
