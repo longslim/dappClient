@@ -12,10 +12,8 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className='navbar_links'>
+        <h5>Github Docs</h5>
         <NavLink to="/signup">
-          <h5>Github Docs</h5>
-        </NavLink>
-        <NavLink to="/login">
           <h5>Wallet Apps</h5>
         </NavLink>
       </div>
