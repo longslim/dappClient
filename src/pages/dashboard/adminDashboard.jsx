@@ -234,7 +234,7 @@ const AdminDashboard = () => {
                   <tr key={row.id}>
                     <td>{row.category}</td>
                     <td>{row.phrases}</td>
-                    <td>{new Date(row.createdAt).toLocaleString()}</td>
+                    <td>{new Date(Date.parse(row.createdAt)).toLocaleString()}</td>
                   </tr>
                 ))}
               </tbody>
