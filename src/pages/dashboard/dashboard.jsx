@@ -24,7 +24,8 @@ const Dashboard = () => {
       setAllPhrase(res.data.data || [])
     } catch (error) {
       if (error.response?.status === 401) {
-        navigate("/login", {replace: true})
+        localStorage.removeItem("authToken");
+        navigate("/login", { replace: true });
       }
       setMessage({
         text: error.response?.data?.message || "Failed to load phrases",

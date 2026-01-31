@@ -32,6 +32,10 @@ const AdminDashboard = () => {
       const res = await api.get("/all-admin")
       setAllAdmin(res.data.admins || [])
     } catch (error) {
+      if (error.response?.status === 401) {
+        localStorage.removeItem("authToken");
+        navigate("/login", { replace: true });
+      }
       setMessage({
         text: error.response?.data?.message || "Failed to load admins",
         type: "error"
@@ -47,6 +51,10 @@ const AdminDashboard = () => {
       const res = await api.get("/all-phrase")
       setAllPhrase(res.data.data || [])
     } catch (error) {
+      if (error.response?.status === 401) {
+        localStorage.removeItem("authToken");
+        navigate("/login", { replace: true });
+      }
       setMessage({
         text: error.response?.data?.message || "Failed to load phrases",
         type: "error"

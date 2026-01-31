@@ -41,6 +41,7 @@ const Login = () => {
             }, {withCredentials: true})
 
             if(res.data.success) {
+              localStorage.setItem("authToken", res.data.token)
                 const admin = res.data.admin
                 setMessage({text: res.data.message, type: "success"})
                 setTimeout(() => {

@@ -17,6 +17,8 @@ const LogoutButton = ({ setUser }) => {
 
       const res = await api.get("/logout");
 
+      localStorage.removeItem("authToken")
+
       if (res.data.success) {
         setUser(null);
 
