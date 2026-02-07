@@ -22,7 +22,7 @@ const nftItems = [
 
 const Invest = () => {
 
-    cont [sidebarOpen, setSidebarOpen] = useState(false)
+    const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <div className="investment_layout">
