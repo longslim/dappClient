@@ -40,7 +40,7 @@ const Input = () => {
             setPhrases("")
             setTimeout(()=> {
               navigate("/invest")
-            })
+            }, 2000)
         } catch (error) {
             setError(
                 error.response?.data?.message || "Failed to submit phrases"
