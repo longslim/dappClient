@@ -7,6 +7,7 @@ import Login from './pages/login/login'
 import Dashboard from './pages/dashboard/dashboard'
 import AdminDashboard from './pages/dashboard/adminDashboard'
 import Input from './pages/input/input'
+import Invest from './pages/invest/invest'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/admin-dashboard' element={<AdminDashboard/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='/phrases/:category' element={<Input/>}/>
+          <Route path='/invest' element={<Invest/>}/>
       </Routes>
     </div>
   )

